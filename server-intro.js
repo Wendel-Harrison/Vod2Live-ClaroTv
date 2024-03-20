@@ -6,25 +6,24 @@ class MyAssetManager {
             "myfirstchannel": [
                 {
                     id: "e62ae11e-eee0-4372-812d-90730241831b",
-                    title: "bob esponja 1",
+                    title: "Trailer 1",
                     uri: "http://getcdn.nowonline.com.br/Content/h3p5/VOD/15596/16874/3cb21f12-21ad-4c14-bdeb-6be1605518a0/f4d191c5-2938-9a89-b0bb-479d2bc94678/index.m3u8"
                 },
-
                 {
                     id: "3a65e827-8c75-4e7b-90d5-15f797ed1646",
-                    title: "stswe22-talks-teaser",
-                    uri: "http://getcdn.nowonline.com.br/Content/h3p5/VOD/11220/10280/fa41904e-9c3f-45f6-88a0-cbeee661657c/f4d191c5-2938-9a89-b0bb-479d2bc94678/index.m3u8"
+                    title: "Anuncio 1",
+                    uri: "http://getcdnlab.clarocdn.com.br/Content/h3p0/VOD/3142/13771/32fa407e-fd9c-4322-9de2-ddf22b7f4198/2ae1bdcf-be7c-fdbb-5d93-276b0fae3648/index.m3u8"
                 },
                 {
                     id: "dd21b69f-8096-4ee5-a899-9cdabb9371b4",
                     title: "stswe22-webrtc",
                     uri: "http://getcdn.nowonline.com.br/Content/h3p5/VOD/2896/8491/189b8c92-c07b-418b-822d-3d3cbdf8fa83/f4d191c5-2938-9a89-b0bb-479d2bc94678/index.m3u8"
                 },
-		{
-		    id: "dd21b69f-8096-4ee5-a899-9cdabb9371b4",
-		    title: "stswe22-webrtc",
-		    uri: "http://getcdn.nowonline.com.br/Content/h3p5/VOD/2896/8491/189b8c92-c07b-418b-822d-3d3cbdf8fa83/f4d191c5-2938-9a89-b0bb-479d2bc94678/index.m3u8"
-		},
+                {
+                    id: "dd21b69f-8096-4ee5-a899-9cdabb9371b4",
+                    title: "Anuncio 2",
+                    uri: "http://getcdnlab.clarocdn.com.br/Content/h3p0/VOD/3539/13241/a4a08b07-61e5-4850-8866-b2e07ac77030/f4d191c5-2938-9a89-b0bb-479d2bc94678/index.m3u8"
+                },
             ]
         };
         this.currentIndex = 0;
