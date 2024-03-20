@@ -45,7 +45,6 @@ class MyAssetManager {
         this.currentIndex = (this.currentIndex + 1) % assets.length;
 
         await new Promise(resolve => setTimeout(resolve, 9000));
-
         return vod;
     }
 }
