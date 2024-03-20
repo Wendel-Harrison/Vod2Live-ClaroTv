@@ -19,7 +19,12 @@ class MyAssetManager {
                     id: "dd21b69f-8096-4ee5-a899-9cdabb9371b4",
                     title: "stswe22-webrtc",
                     uri: "http://getcdn.nowonline.com.br/Content/h3p5/VOD/2896/8491/189b8c92-c07b-418b-822d-3d3cbdf8fa83/f4d191c5-2938-9a89-b0bb-479d2bc94678/index.m3u8"
-                }
+                },
+		{
+		    id: "dd21b69f-8096-4ee5-a899-9cdabb9371b4",
+		    title: "stswe22-webrtc",
+		    uri: "http://getcdn.nowonline.com.br/Content/h3p5/VOD/2896/8491/189b8c92-c07b-418b-822d-3d3cbdf8fa83/f4d191c5-2938-9a89-b0bb-479d2bc94678/index.m3u8"
+		},
             ]
         };
         this.currentIndex = 0;
@@ -48,4 +53,4 @@ const myAssetManager = new MyAssetManager();
 const myChannelManager = new MyChannelManager();
 const engine = new ChannelEngine(myAssetManager, { channelManager: myChannelManager });
 engine.start();
-engine.listen(process.env.PORT || 8080);
+engine.listen(process.env.PORT || 80);
