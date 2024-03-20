@@ -16,7 +16,7 @@ class MyAssetManager {
                 },
                 {
                     id: "dd21b69f-8096-4ee5-a899-9cdabb9371b4",
-                    title: "stswe22-webrtc",
+                    title: "Trailer 2",
                     uri: "http://getcdn.nowonline.com.br/Content/h3p5/VOD/2896/8491/189b8c92-c07b-418b-822d-3d3cbdf8fa83/f4d191c5-2938-9a89-b0bb-479d2bc94678/index.m3u8"
                 },
                 {
@@ -24,6 +24,11 @@ class MyAssetManager {
                     title: "Anuncio 2",
                     uri: "http://getcdnlab.clarocdn.com.br/Content/h3p0/VOD/3539/13241/a4a08b07-61e5-4850-8866-b2e07ac77030/f4d191c5-2938-9a89-b0bb-479d2bc94678/index.m3u8"
                 },
+                {
+                    id: "dd21b69f-8096-4ee5-a899-9cdabb9371b4",
+                    title: "Trailer 3",
+                    uri: "http://getcdn.nowonline.com.br/Content/HLS_2/VOD/trailer/62/27/5b5e930b-8da9-453e-a3a2-44b0e3a56227/index.m3u8"
+                }
             ]
         };
         this.currentIndex = 0;
