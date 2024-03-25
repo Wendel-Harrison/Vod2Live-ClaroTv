@@ -3,7 +3,7 @@ const { ChannelEngine } = require('eyevinn-channel-engine');
 class MyAssetManager {
     constructor() {
         this.assets = {
-            "myfirstchannel": [
+            "Canal bob Esponja": [
                 {
                     id: "e62ae11e-eee0-4372-812d-90730241831b",
                     title: "Trailer 1",
