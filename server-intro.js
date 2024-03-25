@@ -1,32 +1,31 @@
 const axios = require('axios');
 const { ChannelEngine } = require('eyevinn-channel-engine');
 
-const apiUrl = "http://201.17.21.186:3000/assets"
+const apiUrl = "http://201.17.21.186:3000/assets";
+
 class MyAssetManager {
     constructor() {
         this.assets = {
-            "myfirstchannel": [
-                
-            ]
+            "myfirstchannel": [],
         };
         this.currentIndex = 0;
-        async function getAssets() {
-            try {
-                const response = await axios.get(apiUrl);
-                // Verifica se a resposta possui dados
-                if (response.data && Array.isArray(response.data)) {
-                    myfirstchannel.push(...response.data);
-                    console.log('Dados recebidos e adicionados em myfirstchannel:', myfirstchannel);
-                } else {
-                    console.log('A resposta da API não possui dados válidos.');
-                }
-            } catch (error) {
-                console.error('Erro ao fazer a requisição:', error);
-            }
-        }
-        getAssets();
+        this.getAssets(); // Chama o método getAssets no construtor
     }
 
+    async getAssets() {
+        try {
+            const response = await axios.get(apiUrl);
+            // Verifica se a resposta possui dados
+            if (response.data && Array.isArray(response.data)) {
+                this.assets["myfirstchannel"].push(...response.data); // Usa this.assets para acessar a propriedade
+                console.log('Dados recebidos e adicionados em myfirstchannel:', this.assets["myfirstchannel"]);
+            } else {
+                console.log('A resposta da API não possui dados válidos.');
+            }
+        } catch (error) {
+            console.error('Erro ao fazer a requisição:', error);
+        }
+    }
 
     async getNextVod(vodRequest) {
         const assets = this.assets["myfirstchannel"];
@@ -40,13 +39,9 @@ class MyAssetManager {
 
 class MyChannelManager {
     getChannels() {
-        return [
-            { id: "myfirstchannel"}
-        ];
+        return [{ id: "myfirstchannel" }];
     }
 }
-
-
 
 const myAssetManager = new MyAssetManager();
 const myChannelManager = new MyChannelManager();
