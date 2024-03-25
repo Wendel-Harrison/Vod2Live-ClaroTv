@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.6.8",
     "express": "^4.19.1",
     "eyevinn-channel-engine": "^4.3.11"
   }
